@@ -151,7 +151,10 @@ heatmap_plot <- ggplot(
   labs(
     x = "Sequence type (n = 50 per ST)", 
     y = NULL,
-    title = "Key Resistance Family Prevalence\nAcross High-Risk K. pneumoniae Lineages",
+    title = bquote(atop(
+  bold("Key Resistance Family Prevalence"),
+  bold("Across High-Risk ") * bolditalic("K. pneumoniae") * bold(" Lineages")
+)),
     subtitle = "Consolidated Analysis of 300 Genomes from PathogenWatch"
   ) +
   theme_minimal(base_size = 14) +
